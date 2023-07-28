@@ -1,0 +1,646 @@
+*{
+  box-sizing: border-box;
+
+
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -----------------------------------------------------------------------------------> PAGINA 1 */
+
+.cajaprincipal {
+  /*Esta etiqueta se aplica para todas las paginas (1,2 y 3)*/
+  width: 100%;
+  height: 100%;
+}
+
+.fondo1 {
+  width: 100%;
+  height: 800px;
+  background-image: url("img/Pagina1/fon\ 1\ pag\ 1\ final.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#LogoMusIn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  position: fixed;
+  cursor: pointer;
+}
+
+#LogMusIn a:hover {
+  transform: translateY(-3px) scale(1.05);
+  transition: 0.2s;
+
+}
+
+.opciones {
+  display: flex;
+  width: 30%;
+  height: 60px;
+  float: right;
+  margin-top: 40px;
+}
+
+#BLanzamientos {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+
+}
+
+#BEventos {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-left: 5%;
+  font-size: 20pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+}
+
+.opciones a:hover {
+  transform: translateY(-3px) scale(1.05);
+  transition: 0.2s;
+  text-shadow: 10px 10px 4px rgba(205, 110, 217, 0.5);
+}
+
+.biografia {
+  /* background-color: rgb(185, 185, 185, 0.5); */
+  width: 500px;
+  height: 500px;
+  float: right;
+  margin-left: 55%;
+  margin-right: 100px;
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+.biografia h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 30pt;
+
+}
+
+.biografia p {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1.25px;
+  /* text-align:justify; */
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 20pt;
+  margin: 10px 20px 20px 20px;
+}
+
+.fondo2 {
+  background-color: seagreen;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  /* padding-top: 200px; */
+
+}
+
+.flier {
+  padding-top: 120px;
+  border-radius: 15px;
+  margin-left: 15%;
+  width: 70%;
+  height: 500px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.flier img {
+  border-radius: 15px;
+  width: 850px;
+  height: 500px;
+}
+
+.text-flier {
+  width: 850px;
+  height: 70px;
+  margin-left: 19%;
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.245);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text-flier p {
+  color: black;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 18pt;
+  text-align: start;
+  
+}
+
+.fondo3 {
+  background-color: #000000;
+  width: 100%;
+  height: 500px;
+  padding: 50px 0px 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contactos {
+  width: 100%;
+  height: 90px;
+  margin: 50px 0px 50px 0px;
+}
+
+.contactos h1 {
+  color: rgb(255, 255, 255);
+  height: 90px;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-weight: bolder;
+  font-size: 60pt;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+:root {
+  --facebook: #2c34a8;
+  --instagram: #e2687f;
+  --whatsapp: #2dc346;
+
+}
+
+.Redessociales {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.Redessociales ul li {
+  display: inline-block;
+  margin: 0 30px;
+  width: 140px;
+  height: 140px;
+  text-align: center;
+
+}
+
+.Redessociales ul li a {
+  display: block;
+  background: #ffffff;
+  color: #222222;
+  line-height: 140px;
+  font-size: 60px;
+  box-shadow: -10px 7px 25px 0px rgb(97, 237, 79);
+  transition: 0.2s;
+  border-radius: 50%;
+
+}
+
+.Redessociales ul:hover a {
+  filter: blur(1px);
+
+}
+
+.Redessociales ul li a:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.4);
+  filter: none;
+
+}
+
+.Redessociales ul li .facebook:hover {
+  background: var(--facebook);
+}
+serif
+.Redessociales ul li .instagram:hover {
+  background: var(--instagram);
+}
+
+.Redessociales ul li .whatsapp:hover {
+  background: var(--whatsapp);
+}
+
+
+/* -----------------------------------------------------------------------------------> PAGINA 2 */
+
+.fondo4 {
+  width: auto;
+  height: 800px;
+  background: url(img/Pagina2/fon\ 1\ pag\ 2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* #BLanzamientos {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+
+} */
+
+#BEventos2 {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-left: 215px;
+  font-size: 20pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+    
+}
+
+.caja-lanzamiento-principal {
+  width: 100%;
+  height: 710px;
+  float: left;
+}
+
+.lan-reciente {
+  background-color: rgba(229, 60, 226, 0.195);
+  margin-left: 30%;
+  margin-top: 60px;
+  /* padding-top: 50px; */
+  width: 40%;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lan-reciente h1{
+  color: floralwhite;
+  font-size: 32pt;
+  font-weight: bold;
+  font-family: 'Gill Sans MT', sans-serif;
+
+}
+
+.video-lan {
+  background-color: rgba(229, 60, 226, 0.195);
+  margin-left: 25%;
+  margin-top: 60px;
+  width: 50%;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-lan p{
+  color: floralwhite;
+  font-family: 'Gill Sans MT', sans-serif;
+  margin-left: 30px;
+  margin-right: 30px; 
+  font-size: 20pt;
+  text-align: center;
+
+}
+
+.fondo5 {
+  width: 100%;
+  height: 1100px;
+  background-color: #000000;
+}
+
+.caja-lanzamientos1 {
+  width: 100%;
+  height: 450px;
+  padding-top: 50px;
+
+
+}
+
+.imagen-lanzamiento1 {
+  background-image: url('img/Pagina2/caratula\ 1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 2%;
+  width: 20%;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+}
+
+.texto-lanzamiento1 {
+  background-color: rgba(229, 60, 226, 0.195);
+  margin-left: 2%;
+  width: 75%;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+}
+
+.texto-lanzamiento1 h1 {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: center;
+  font-size: 24pt;
+}
+
+.texto-lanzamiento1 h3 {
+  color: mediumslateblue;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: center;
+  justify-content: center;
+  font-size: 13pt;
+}
+
+.texto-lanzamiento1 #descripcion {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: justify;
+  font-size: 12pt;
+  margin: 0px 30px 0px 30px;
+}
+
+.texto-lanzamiento1 #lista-personas {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: justify;
+  font-size: 12pt;
+  margin: 20px 30px 0px 25px;
+}
+
+.nombres {
+  width: 98%;
+  height: 230px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+}
+
+.nombres ol {
+  list-style-type: square;
+  margin-left: 2%;
+
+
+}
+
+.nombres ol li {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 12pt;
+  margin-top: 10px;
+
+}
+
+.nombres a {
+  color: mediumslateblue;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-weight: bold;
+}
+
+.caja-lanzamientos2 {
+  width: 100%;
+  height: 450px;
+  padding-top: 50px;
+
+}
+
+.texto-lanzamiento2 {
+  background-color: rgba(229, 60, 226, 0.195);
+  margin-left: 2%;
+  width: 75%;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+}
+
+.texto-lanzamiento2 h1 {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: center;
+  justify-content: center;
+  font-size: 24pt;
+}
+
+.texto-lanzamiento2 h3 {
+  color: mediumslateblue;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: center;
+  justify-content: center;
+  font-size: 13pt;
+}
+
+.texto-lanzamiento2 #descripcion2 {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: justify;
+  font-size: 12pt;
+  margin: 0px 30px 0px 30px;
+}
+
+.texto-lanzamiento2 #lista-personas2 {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  text-align: justify;
+  font-size: 12pt;
+  margin: 20px 30px 0px 25px;
+}
+
+.nombres2 {
+  width: 98%;
+  height: 230px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+}
+
+.nombres2 ol {
+  list-style-type: square;
+  margin-left: 2%;
+
+
+}
+
+.nombres2 ol li {
+  color: #ffffff;
+
+}
+
+.nombres2 ol li p {
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 12pt
+}
+
+.nombres2 ol li span {
+  color: mediumslateblue;
+  font-weight: bold;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 12pt
+}
+
+.imagen-lanzamiento2 {
+  background-image: url('img/Pagina2/caratula\ 2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 2%;
+  width: 20%;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+}
+
+/* -----------------------------------------------------------------------------------> PAGINA 3 */
+
+.fondo6 {
+  height: 610px;
+  width: 100%;
+  background: url(img/Pagina3/conciertos.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/* #BLanzamientos3 {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+
+} */
+
+/* #BEventos3 {
+  text-decoration: none;
+  color: rgb(255, 0, 0);
+  font-weight: bold;
+  margin-left: 5%;
+  font-size: 20pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+} */
+
+.box-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(229, 60, 226, 0.195);
+
+}
+
+#boton-evento {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18pt;
+  font-family: 'Gill Sans MT', sans-serif;
+  cursor: pointer;
+  padding: 15px 20px;
+  border-radius: 30px;
+  border-width: 2px;
+
+}
+
+.fondo7 {
+  width: 100%;
+  height: 750px;
+  background-color:black;
+}
+
+.espacios-noticias {
+  width: 100%;
+  height: 480px;
+  padding: 100px 0px 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.espacios-noticias .noticia {
+  background: url(img/Pagina3/HIS\ 1.jpg);
+  /* background-color: gray; */
+  margin-left: 1%;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+
+}
+
+.espacios-noticias .noticia1 {
+  background: url(img/Pagina3/HIS\ 2.jpg);
+  /* background-color: gray; */
+  margin-left: 1%;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+
+}
+
+.espacios-noticias .noticia2 {
+  /* background-color: gray; */
+  background: url(img/Pagina3/HIS\ 3.jpg);
+  margin-left: 1%;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+
+}
+
+.espacios-noticias .noticia3 {
+  /* background-color: gray; */
+  background: url(img/Pagina3/HIS\ 4.jpg);
+  margin-left: 1%;
+  width: 320px;
+  height: 450px;
+  border-radius: 10px;
+  float: left;
+
+}
+
+
+/* -------------------------------> Footer */
+
+.footer1 {
+  /*Esta clase se aplica para todas las paginas (1,2 y 3)*/
+  background-color: #1c1a1a;
+  color: #ffffff;
+  font-family: 'Gill Sans MT', sans-serif;
+  font-size: 12pt;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  text-align: center;
+  padding: 30px 0px 0px 0px;
+  font-weight: bold;
+
+}
