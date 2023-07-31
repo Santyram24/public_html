@@ -33,6 +33,7 @@ body {
   margin-top: 20px;
   position: fixed;
   cursor: pointer;
+ 
 }
 
 #LogMusIn a:hover {
@@ -40,13 +41,30 @@ body {
   transition: 0.2s;
 }
 
-.opciones {
+.opciones{
   display: flex;
-  width: 30%;
-  height: 60px;
+  width: 33%;
+  height: 90px;
   float: right;
   margin-top: 40px;
 }
+
+.nav_links  li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.nav_hamburger,
+.nav_close{
+  display: none;
+  visibility: hidden;
+
+}
+
+
+
 
 #BLanzamientos {
   text-decoration: none;
@@ -242,7 +260,10 @@ body {
   background-position: center center;
 }
 
-/* #BLanzamientos {
+
+
+#BLanzamientos2 {
+  
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -250,13 +271,14 @@ body {
   font-family: 'Gill Sans MT', sans-serif;
   cursor: pointer;
 
-} */
+}
+
 
 #BEventos2 {
+  
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-weight: bold;
-  margin-left: 215px;
   font-size: 20pt;
   font-family: "Gill Sans MT", sans-serif;
   cursor: pointer;
@@ -620,24 +642,103 @@ body {
     position: absolute;
   }
 
-  .opciones {
-    display: flex;
-    justify-content: flex-end;
-  }
+  .opciones{
+    --state-close:scale(0);
+    --state-hamburger:scale(1);
+    --state-menu:translate(-100%);
+
+    max-width: 200px;
+    width: 200px;
+    margin-top: 0;
+    margin-left: auto;
+    float: none;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(2,max-content);
+  
+
+}
+
+#nav:target{
+  --state-menu:translate(0);
+  --state-close:scale(1);
+    --state-hamburger:scale(0);
+}
+
+.nav_links li{
+  
+  display: block;
+
+}
 
   #BLanzamientos {
-    display: block;
+    
     padding: 10px;
     text-decoration: none;
-    font-size: 15pt;
+    font-size: 20pt;
   }
 
   #BEventos {
-    display: block;
+    
     padding: 10px;
     text-decoration: none;
-    font-size: 15pt;
+    font-size: 20pt;
   }
+
+ 
+.nav_hamburger,
+.nav_close{
+  visibility: visible;
+  display: block;
+ 
+  cursor: pointer;
+  grid-column: -2/-1;
+  grid-row: 1/2;
+  margin-right: 20px;
+  transition: .4s transform;
+}
+
+
+
+.nav_hamburger{
+  transform: var(--state-hamburger);
+}
+
+.nav_close{
+  transform: var(--state-close);
+}
+.nav_links{
+  /* display:none; */
+  background-color: #00000057;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  display: grid;
+  align-content: first baseline;
+  gap:2em;
+  padding-top: 14%;
+  padding-left: 5%;
+  text-align: end;
+  transform: var(--state-menu);
+  transition: .3s transform;
+}
+
+.nav_icon{
+
+  height: 40px;
+  margin-top: 2px;
+}
+
+
+
+.nav_item{
+  display: none;
+}
+
 
   .biografia {
     float: inline-end;
@@ -688,11 +789,124 @@ body {
 
   .Redessociales ul li {
     display: inline-block;
-    margin: 0 6px;
-    width: 7rem;
+    margin: 0 4px;
+    width: 6.8rem;
   }
 
   .Redessociales ul li a {
     font-size: 30px;
+  }
+
+}
+
+/* ------------------------------------> Pagina 2 - tel*/
+@media screen and (max-width: 768px) {
+  .fondo4 {
+    height: 700px;
+    background-color: #000000;
+    background-size: 160% 500px;
+    background-position: center;
+    margin: 0 auto;
+  }
+
+
+  /* #BEventos2 {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-right: 3px;
+    font-size: 16pt;
+    padding: 10px;
+  } */
+
+  .caja-lanzamiento-principal {
+    width: 100%;
+    height: 475px;
+    float: center;
+  }
+
+  .lan-reciente {
+    margin: 50px auto;
+    height: 60px;
+    width: 50%;
+  }
+
+  .lan-reciente h1 {
+    color: floralwhite;
+    font-size: 25pt;
+    font-weight: bold;
+    font-family: "Gill Sans MT", sans-serif;
+  }
+
+  .video-lan {
+    background-color: rgba(229, 60, 226, 0.195);
+    margin: 50px auto auto 25%;
+    width: 50%;
+    height: 250px;
+  }
+
+  .video-lan p {
+    margin: 20px 20px 20px 20px;
+    font-size: 16pt;
+    text-align: center;
+  }
+
+  .fondo5 {
+    width: 100%;
+    height: 2130px;
+    background-color: #000000;
+  }
+
+  .caja-lanzamientos1 {
+    width: 100%;
+    height: 1040px;
+    padding-top: 50px;
+
+  }
+
+  .imagen-lanzamiento1 {
+    background-size: 100%;
+    width: 60%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20% 0px 20%;
+
+  }
+
+  .texto-lanzamiento1 {
+    width: 90%;
+    height: 600px;
+    margin: 10px 5% 5% 5%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .caja-lanzamientos2 {
+    width: 100%;
+    height: 1010px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .imagen-lanzamiento2 {
+    background-size: 100%;
+    width: 60%;
+    height: 350px;
+    margin: 0px 20% 0px 20%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .texto-lanzamiento2 {
+    width: 90%;
+    height: 530px;
+    margin: 10px 5% 5% 5%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
   }
 }
